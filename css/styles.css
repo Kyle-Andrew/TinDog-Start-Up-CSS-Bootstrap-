@@ -1,0 +1,177 @@
+/* Page-wide styling */
+
+body {
+  font-family: 'Montserrat';
+  text-align: center;
+}
+
+/* Headings */
+
+h1, h2, h3 {
+  font-weight: bold;
+}
+
+.hero-heading {
+  font-size: 3.5rem;
+  line-height: 1.5;
+}
+
+.section-heading {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+/* Containers */
+
+.container-fluid {
+  padding: 7% 15%;
+}
+
+#title .container-fluid {
+  padding: 1% 15% 7% 15%;
+}
+
+#testimonials .container-fluid {
+  padding-bottom: 3%;
+}
+
+/* Navbar */
+
+.navbar {
+  padding: 0 0 4.5rem 0;
+}
+
+.navbar-brand {
+  font-family: 'Ubuntu';
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-item {
+  padding: 0 18px;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+}
+
+/* Background colouring */
+
+.coloured-background {
+  background-color: #FF4C68;
+  color: white;
+}
+
+.white-background {
+  background-color: white;
+  color: black;
+}
+
+#testimonials, #press {
+  background-color: #EF8172;
+} 
+
+/* Hero section */
+
+#title {
+  text-align: left;
+}
+
+.download-btn {
+  margin: 5% 3% 5% 0;
+}
+
+.mock-image {
+  position: absolute;
+  right: 28%;
+  transform: rotate(25deg);
+  width: 60%;
+}
+
+@media (max-width: 1150px) {
+  #title {
+    text-align: center;
+  }
+  .mock-image {
+    padding-top: 5%;
+    position: static;
+    transform: rotate(0deg);
+  }
+}
+
+/* Features  */
+
+#features {
+  position: relative;
+}
+
+.feature-icon {
+  color: #EF8172;
+  padding: 5% 0;
+}
+
+.feature-icon:hover {
+  color: #FF4C68;
+}
+
+.feature-text {
+  font-size: 1.5rem;
+}
+
+.feature-description {
+  color: #8F8F8F;
+  padding: 0 8%;
+}
+
+/* Testimonials & press */
+
+.testimonial-image {
+  border-radius: 100%;
+  width: 12%;
+}
+
+.testimonial-text {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+.press-icon {
+  width: 15%;
+  margin: 10px 20px 100px;
+}
+
+/* Pricing */
+
+#pricing {
+  padding: 75px 100px 45px;
+}
+
+.pricing-text {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+.pricing-plan-header {
+  font-size: 1.5rem;
+  margin-bottom: 0%;
+}
+
+.card-padding {
+  padding: 3% 2% 0;
+}
+
+/* Call to action */
+
+#cta .download-btn {
+  margin: 3% 2% 2% 0;
+}
+
+/* Footer */
+
+#footer i {
+  margin: 0% 1%;
+}
+
+#footer p {
+  margin: 1% 0% 0%;
+}
