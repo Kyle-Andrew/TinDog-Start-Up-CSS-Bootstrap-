@@ -2,7 +2,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>TinDog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    <title>VIKIMPI Security</title>
 
     <link
       rel="stylesheet"
@@ -18,12 +19,11 @@
       rel="stylesheet"
     />
 
-    <script
-      src="https://kit.fontawesome.com/8966147523.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://kit.fontawesome.com/8966147523.js" crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/index-styles.css" />
+
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
   </head>
 
   <body>
@@ -32,7 +32,10 @@
         <!-- Nav Bar -->
 
         <nav class="navbar navbar-expand-lg navbar-dark">
-          <a class="navbar-brand" href="#">tindog</a>
+          <a class="navbar-brand" href="#">
+            <img src="./images/favicon.ico" alt="" />
+             VIKIMPI Security
+          </a>
 
           <button
             class="navbar-toggler"
@@ -49,13 +52,13 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item">
-                <a class="nav-link" href="#features">Features</a>
+                <a class="nav-link" href="#features">A Bit About Us</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#testimonials">Reviews</a>
+                <a class="nav-link" href="#gallery">Gallery</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#pricing">Pricing</a>
+                <a class="nav-link" href="#services">Our Services</a>
               </li>
             </ul>
           </div>
@@ -65,20 +68,15 @@
 
         <div class="row">
           <div class="col-lg-6">
-            <h1 class="hero-heading">Meet new and interesting dogs nearby.</h1>
-            <button class="btn btn-dark btn-lg download-btn" type="button">
-              <i class="fab fa-apple"></i> Download
-            </button>
-            <button class="btn btn-outline-light btn-lg download-btn" type="button">
-              <i class="fab fa-google-play"></i> Download
-            </button>
+            <h1 class="hero-heading">Going above and beyond the norm</h1>
+            <a href="./contact.html">
+              <button class="btn btn-outline-light btn-lg download-btn" type="button">
+               Get in contact! 
+              </button>
+            </a>
           </div>
           <div class="col-lg-6">
-            <img
-              class="mock-image"
-              src="images/iphone6.png"
-              alt="iphone-mockup"
-            />
+            <img class="logo" src="images/logo.png" alt="logo" />
           </div>
         </div>
       </div>
@@ -87,61 +85,86 @@
     <!-- Features -->
 
     <section class="white-background" id="features">
-      <div class="row container-fluid">
-        <div class="col-lg-4 feature-tab">
-          <i class="fas fa-check-circle fa-4x feature-icon"></i>
-          <h3 class="feature-text">Easy to use</h3>
+    
+      <div class="container-fluid feature-grid">
+
+        <div class="feature-tab feature-1">
+          <i class="fa-solid fa-book fa-4x feature-icon" onmouseover="iconPulse(this)" onmouseout="stopIconPulse(this)"></i>
           <p class="feature-description">
-            So easy to use, even your dog could do it.
+            Several years of extensive knowledge and expertise
           </p>
         </div>
 
-        <div class="col-lg-4 feature-tab">
-          <i class="fas fa-bullseye fa-4x feature-icon"></i>
-          <h3 class="feature-text">Elite Clientele</h3>
+        <div class="feature-tab feature-2">
+          <i class="fa-solid fa-circle-check fa-4x feature-icon" onmouseover="iconPulse(this)" onmouseout="stopIconPulse(this)"></i>
           <p class="feature-description">
-            We have all the dogs, the greatest dogs.
+            Fully acredited and certified service agents
           </p>
         </div>
 
-        <div class="col-lg-4 feature-tab">
-          <i class="fas fa-heart fa-4x feature-icon"></i>
-          <h3 class="feature-text">Guaranteed to work</h3>
+        <div class="feature-tab feature-3">
+          <i class="fa-solid fa-wifi fa-4x feature-icon" onmouseover="iconPulse(this)" onmouseout="stopIconPulse(this)"></i>
           <p class="feature-description">
-            Find the love of your dog's life or your money back.
+            Always on the forefront of technological advancements
           </p>
         </div>
+
+        <div class="feature-tab feature-4">
+          <i class="fa-solid fa-shield fa-4x feature-icon" onmouseover="iconPulse(this)" onmouseout="stopIconPulse(this)"></i>
+          <p class="feature-description">
+            Proactive measures for loss, damage and hazard prevention and control
+          </p>
+        </div>
+
+        <div class="feature-tab feature-5">
+          <i class="fa-solid fa-seedling fa-4x feature-icon" onmouseover="iconPulse(this)" onmouseout="stopIconPulse(this)"></i>
+          <p class="feature-description">
+            Continuous personal & professional growth of staff
+          </p>
+        </div>
+
+        <div class="feature-tab feature-6">
+          <i class="fa-solid fa-heart fa-4x feature-icon" onmouseover="iconPulse(this)" onmouseout="stopIconPulse(this)"></i>
+          <p class="feature-description">
+            Innovative and customer-focused approach to operations
+          </p>
+        </div>
+
+        <div class="feature-tab feature-7">
+          <i class="fa-solid fa-user fa-4x feature-icon" onmouseover="iconPulse(this)" onmouseout="stopIconPulse(this)"></i>
+          <p class="feature-description">
+            Services tailored to suit your individual needs
+          </p>
+        </div>
+      </div>
+
       </div>
     </section>
 
     <!-- Testimonials -->
 
-    <section class="coloured-background" id="testimonials">
+    <section class="coloured-background" id="gallery">
       <div id="testimonial-carousel" class="carousel slide" data-ride="false">
         <div class="carousel-inner">
           <div class="container-fluid carousel-item active">
             <h2 class="testimonial-text">
-              I no longer have to sniff other dogs for love. I've found the
-              hottest Corgi on TinDog. Woof.
+              Meet some of the team
             </h2>
             <img
               class="testimonial-image"
-              src="images/dog-img.jpg"
-              alt="dog-profile"
+              src="./images/Gallery/slide-1.png"
+              alt="team image 1"
             />
-            <em>Pebbles, New York</em>
           </div>
           <div class="container-fluid carousel-item">
             <h2 class="testimonial-text">
-              My dog used to be so lonely, but with TinDog's help, they've found
-              the love of their life. I think.
+              Meet some of the team
             </h2>
             <img
               class="testimonial-image"
-              src="images/lady-img.jpg"
-              alt="lady-profile"
+              src="./images/Gallery/slide-2.png"
+              alt="team image 2"
             />
-            <em>Beverly, Illinois</em>
           </div>
         </div>
         <a
@@ -165,41 +188,27 @@
       </div>
     </section>
 
-    <!-- Press -->
-
-    <section class="coloured-background" id="press">
-      <img class="press-icon" src="images/techcrunch.png" alt="tc-logo" />
-      <img class="press-icon" src="images/tnw.png" alt="tnw-logo" />
-      <img class="press-icon" src="images/bizinsider.png" alt="biz-insider-logo"/>
-      <img class="press-icon" src="images/mashable.png" alt="mashable-logo" />
-    </section>
-
     <!-- Pricing -->
 
-    <section class="white-background" id="pricing">
-      <h2 class="section-heading">A Plan for Every Dog's Needs</h2>
-      <p>Simple and affordable price plans for your and your dog.</p>
+    <section class="white-background" id="services">
+      <h2 class="section-heading">What can we offer you?</h2>
+      <p>Everybody has different needs for their security, so we've got you covered</p>
 
       <div class="row mb-3 text-center">
         <div class="col-lg-4 card-padding">
           <div class="card mb-4 box-shadow">
             <div class="card-header">
-              <h3 class="pricing-plan-header">Chihuahua</h3>
+              <h3 class="pricing-plan-header">Service Agents</h3>
             </div>
             <div class="card-body">
-              <h2 class="pricing-text">Free</h2>
               <ul class="list-unstyled mt-3 mb-4">
-                <li>5 Matches Per Day</li>
-                <li>10 Messages Per Day</li>
-                <li>Unlimited App Usage</li>
-                <br />
+                <li>Semi-Armed Guards</li>
+                <li>Armed Guards</li>
+                <li>Crowd Controllers</li>
+                <li>Threat Mitigation Officers</li>
+                <li>Canine Unit</li>
+                <li>Response Vehicles</li>
               </ul>
-              <button
-                type="button"
-                class="btn btn-lg btn-block btn-outline-dark"
-              >
-                Sign up for free
-              </button>
             </div>
           </div>
         </div>
@@ -207,19 +216,17 @@
         <div class="col-lg-4 card-padding">
           <div class="card mb-4 box-shadow">
             <div class="card-header">
-              <h3 class="pricing-plan-header">Labrador</h3>
+              <h3 class="pricing-plan-header">Operating Sectors</h3>
             </div>
             <div class="card-body">
-              <h2 class="pricing-text">$49 / mo</h2>
               <ul class="list-unstyled mt-3 mb-4">
-                <li>Unlimited Matches</li>
-                <li>Unlimited Messages</li>
-                <li>Unlimited App Usage</li>
+                <li>Industrial & Business Parks</li>
+                <li>Shopping & Retail Centres</li>
+                <li>Hospitality & Leisure Facilities</li>
+                <li>Building & Construction Sites</li>
+                <li>Educational Institutions</li>
                 <br />
               </ul>
-              <button type="button" class="btn btn-lg btn-block btn-dark">
-                Get started
-              </button>
             </div>
           </div>
         </div>
@@ -227,20 +234,18 @@
         <div class="col-lg-4 card-padding">
           <div class="card mb-4 box-shadow">
             <div class="card-header">
-              <h3 class="pricing-plan-header">Mastiff</h3>
+              <h3 class="pricing-plan-header">Event Coverage</h3>
             </div>
 
             <div class="card-body">
-              <h2 class="pricing-text">$99 / mo</h2>
               <ul class="list-unstyled mt-3 mb-4">
-                <li>Pirority Listing</li>
-                <li>Unlimited Matches</li>
-                <li>Unlimited Messages</li>
-                <li>Unlimited App Usage</li>
+                <li>Exhibitions & Conferences</li>
+                <li>Social & Sporting Events</li>
+                <li>Awards Ceremonies</li>
+                <li>Corporate Functions</li>
+                <li>Weddings</li>
+                <li>Concert Security</li>
               </ul>
-              <button type="button" class="btn btn-lg btn-block btn-dark">
-                Contact us
-              </button>
             </div>
           </div>
         </div>
@@ -252,27 +257,26 @@
     <section class="coloured-background container-fluid" id="cta">
       <div>
         <h2 class="hero-heading">
-          Find the True Love of Your Dog's Life Today.
+          Giving you the peace of mind you need to focus on what's important
         </h2>
 
-        <button class="btn btn-dark btn-lg download-btn" type="button">
-          <i class="fab fa-apple"></i> Download
-        </button>
-        <button class="btn btn-outline-light btn-lg download-btn" type="button">
-          <i class="fab fa-google-play"></i> Download
-        </button>
+        <a href="./contact.html">
+          <button class="btn btn-outline-light btn-lg download-btn" type="button">
+            Get a Quote!
+          </button> 
+        </a>
       </div>
     </section>
 
     <!-- Footer -->
 
     <footer class="white-background container-fluid" id="footer">
-      <i class="fab fa-twitter"></i>
+      <!-- <i class="fab fa-twitter"></i>
       <i class="fab fa-facebook"></i>
       <i class="fab fa-instagram"></i>
-      <i class="fas fa-envelope"></i>
+      <i class="fas fa-envelope"></i> -->
 
-      <p>© Copyright 2023 TinDog</p>
+      <p>© Copyright 2023 VIKIMPI Security</p>
     </footer>
 
     <script
@@ -286,5 +290,7 @@
       integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
       crossorigin="anonymous"
     ></script>
+
+    <script src="./js/index.js"></script>
   </body>
 </html>
